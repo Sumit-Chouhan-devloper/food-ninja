@@ -1,9 +1,9 @@
 const MyNewsLatter = () => {
     return (
       <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 my-10 lg:pt-20">
-        <div className="flex flex-wrap justify-center md:justify-start">
-          <div className="md:w-6/12 lg:w-[unset]">
-            <div className="bg-[#283A61] rounded px-[27px] py-[38px]">
+        <div className="flex flex-wrap justify-center lg:justify-between">
+          <div className="lg:w-4/12 md:w-10/12">
+            <div className="bg-[#283A61] rounded md:px-12 px-6 lg:px-10 py-[38px]">
               <h3 className="ff_Merriweather text-white font-bold text-center leading-[160%] max-w-[182px] mx-auto text-[22px] sm:text-2xl">
                 Subscribe To Our Newsletter
               </h3>
@@ -13,7 +13,7 @@ const MyNewsLatter = () => {
               </p>
               <div className="text-center">
                 <input
-                  className="ff_roboto max-w-[288px] text-[#605C59] font-medium placeholder:text-[#605C59] text-base sm:text-lg px-3 py-2 rounded"
+                  className="ff_roboto w-full text-[#605C59] font-medium placeholder:text-[#605C59] text-base sm:text-lg px-3 py-2 rounded"
                   placeholder="Email"
                   type="text"
                 />
@@ -23,9 +23,23 @@ const MyNewsLatter = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-5/12 w-full lg:pr-10 md:pl-4 lg:pl-[80px] pt-5 md:pt-0">
+          <div className="lg:w-4/12 w-full md:w-6/12 pt-6 lg:pt-0 pr-4 lg:pr-0 lg:pl-[40px]">
             <h4 className="ff_roboto text-black font-medium text-sm  pb-2 md:pb-7">
               POPULAR POSTS
+            </h4>
+            <p className="ff_Merriweather text-black text-sm leading-[160%]">
+              How To Have Your Cake and Eat It Too: The Way of The Chicken Man
+            </p>
+            <p className="ff_Merriweather text-black text-sm leading-[160%] py-3 md:py-[22px]">
+              My Grandma’s 30-year-old Recipe
+            </p>
+            <p className="ff_Merriweather text-black text-sm leading-[160%]">
+              What I learned about cooking from Ratatoulie
+            </p>
+          </div>
+          <div className="lg:w-4/12 w-full md:w-6/12 pt-6 lg:pt-0 md:pl-4 lg:pl-[60px]">
+            <h4 className="ff_roboto text-black font-medium text-sm  pb-2 md:pb-7">
+            Recent Posts
             </h4>
             <p className="ff_Merriweather text-black text-sm leading-[160%]">
               How To Have Your Cake and Eat It Too: The Way of The Chicken Man
