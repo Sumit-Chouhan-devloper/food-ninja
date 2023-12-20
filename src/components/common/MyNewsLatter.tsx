@@ -1,6 +1,6 @@
 const MyNewsLatter = () => {
     return (
-      <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 my-10 lg:pt-20">
+      <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-7 mb-10 lg:pt-20">
         <div className="flex flex-wrap justify-center lg:justify-between">
           <div className="lg:w-4/12 md:w-10/12">
             <div className="bg-[#283A61] rounded md:px-12 px-6 lg:px-10 py-[38px]">

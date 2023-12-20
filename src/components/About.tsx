@@ -9,8 +9,8 @@ const About: React.FC<AboutProps> = ({ items }) => {
   return (
     <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-12 sm:mt-[80px]">
       <div className="flex flex-col md:flex-row gap-8 md:gap-4 xl:gap-[80px] md:h-[603px] mb-12">
-        {items.map((item) => (
-          <div className="md:w-6/12 w-full flex flex-col justify-between h-full" key={item.id}>
+        {items.map((item, id) => (
+          <div className="md:w-6/12 w-full flex flex-col justify-between h-full" key={id}>
             <div className="mb-4 md:mb-0">
                 <img
                   height={510}
@@ -19,7 +19,7 @@ const About: React.FC<AboutProps> = ({ items }) => {
                   src={item.nature_img}
                   alt="nature"
                 />
-                <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-1 px-3 rounded mt-5 mb-3">
+                <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-[3px] px-4 rounded mt-5 mb-3">
                   {item.btn}
                 </button>
                 <h3 className="ff_Merriweather text-black font-bold leading-[140%] text-[22px] sm:text-2xl">
