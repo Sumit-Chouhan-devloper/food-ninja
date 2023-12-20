@@ -1,6 +1,6 @@
 const MyNewsLatter = () => {
     return (
-      <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-7 mb-10 lg:pt-20" id="Privacy">
+      <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-7 mb-10 lg:pt-20" id="privacy">
         <div className="flex flex-wrap justify-center lg:justify-between">
           <div className="lg:w-4/12 md:w-10/12">
             <div className="bg-[#283A61] rounded md:px-12 px-6 lg:px-10 py-[38px]">
@@ -16,7 +16,7 @@ const MyNewsLatter = () => {
                   <input required
                     className="ff_roboto w-full text-[#605C59] font-medium placeholder:text-[#605C59] text-base sm:text-lg px-3 py-2 rounded outline-none"
                     placeholder="Email"
-                    type="text"
+                    type="Email"
                   />
                 </div>
                 <button className="ff_roboto text-white bg-[#000638] text-base sm:text-lg font-medium leading-[160%] mt-5 rounded px-3 py-2 hover:bg-[white] hover:text-[#283A61] transition-all duration-300">

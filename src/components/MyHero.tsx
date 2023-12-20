@@ -2,7 +2,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const MyHero = () => {
   return (
-    <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0">
+    <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0"id="contact">
       <h1
         className="ff_Merriweather text-[#000638] font-black text-center md:text-5xl text-4xl pt-[92px] animate__animated"
         id="typed"

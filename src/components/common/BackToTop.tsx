@@ -31,7 +31,7 @@ const BackToTop = () => {
     >
       <ArrowUpIcon
         onClick={scrollToTop}
-        className="h-10 w-10 text-white rounded-full bg-[#283A61] p-2 cursor-pointer"
+        className="h-10 w-10 text-white rounded-full bg-[#283A61] p-2 cursor-pointer hover:scale-105 transition-all duration-200"
       />
     </div>
   );

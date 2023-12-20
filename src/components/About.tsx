@@ -7,7 +7,7 @@ type AboutProps = {
 
 const About: React.FC<AboutProps> = ({ items }) => {
   return (
-    <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-12 sm:mt-[80px]">
+    <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-12 sm:mt-[80px]" id="about">
       <div className="flex flex-col md:flex-row gap-8 md:gap-4 xl:gap-[80px] md:h-[603px] mb-12">
         {items.map((item, id) => (
           <div className="md:w-6/12 w-full flex flex-col justify-between h-full" key={id}>
