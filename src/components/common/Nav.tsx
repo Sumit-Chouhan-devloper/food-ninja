@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const HeaderLast = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,35 +18,35 @@ const HeaderLast = () => {
   return (
     <>
       <nav>
-        <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0">
-          <div className="flex items-center justify-between xl:mt-16 mt-4">
-            <a
-              href="/"
+        <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 lg:mt-9 sm:mt-6 mt-4">
+          <div className="flex items-center justify-between">
+            <Link
+              to="/"
               className="ff_Merriweather text-[#000638] font-black text-2xl"
             >
               Food Ninja
-            </a>
+            </Link>
             <div className="hidden sm:block">
               <div className="gap-5 flex items-center">
-                <a
-                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-                  href="/Blog"
+                <Link
+                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+                  to="/Blog"
                 >
                   Blog
-                </a>
-                <a
-                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-                  href="about.com"
+                </Link>
+                <Link
+                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+                  to="/Blog"
                 >
                   About
-                </a>
-                <a
-                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-                  href="contact.com"
+                </Link>
+                <Link
+                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+                  to="/Blog"
                 >
                   Contact
-                </a>
-                <button className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4">
+                </Link>
+                <button className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4 hover:bg-transparent hover:text-[#283A61] border hover:border-[#283A61] transition-all duration-300">
                   Log in
                 </button>
               </div>
@@ -73,30 +74,30 @@ const HeaderLast = () => {
           id="mobile-menu"
         >
           <div className="gap-5 flex items-center flex-col justify-center h-full">
-            <a
+            <Link
               onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-              href="/Blog"
+              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+              to="/Blog"
             >
               Blog
-            </a>
-            <a
+            </Link>
+            <Link
               onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-              href="about.com"
+              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+              to="/Blog"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200"
-              href="contact.com"
+              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
+              to="/Blog"
             >
               Contact
-            </a>
+            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4"
+              className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4 hover:bg-transparent hover:text-[#283A61] border hover:border-[#283A61] transition-all duration-300"
             >
               Log in
             </button>

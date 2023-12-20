@@ -9,8 +9,8 @@ type FoodTheoryProps = {
 const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
   // const FoodTheory = () => {
   return (
-    <div className="container lg:max-w-[800px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 pt-14 sm:pt-[93px]">
-      <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-1 px-4 rounded">
+    <div className="container lg:max-w-[800px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 pt-14 sm:pt-[100px]">
+      <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-1 px-4 rounded hover:bg-transparent border hover:border-[#283A61] hover:text-[#283A61] transition-all duration-300">
         Food Theory
       </button>
       <h1 className="ff_Merriweather text-black font-bold md:text-[46px] text-4xl py-4 leading-[120%]">
@@ -32,7 +32,7 @@ const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
           George Costanza
         </p>
       </div>
-      <p className="ff_roboto text-[#434343] font-medium leading-[160%] text-[22px] sm:text-[26px] py-[30px]">
+      <p className="ff_roboto text-[#434343] font-medium leading-[160%] text-[22px] sm:text-[26px] py-6  sm:py-[30px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices dui
         diam arcu pharetra at laoreet pellentesque. Imperdiet sit ut ornare
         nulla risus id fames nascetur urna. Eros in neque tincidunt.
@@ -45,28 +45,28 @@ const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
         diam. Vitae, diam justo, massa, elit. In et nibh ut in diam tellus at
         tellus diam.
       </p>
-      <div className="bg-[#F5F5F5] px-5 py-5 sm:px-9 sm:py-8 rounded-[7px]">
-        <h3 className="ff_Merriweather text-black text-[22px] font-bold sm:text-2xl leading-[160%] pb-4">
+      <div className="bg-[#F5F5F5] px-5 py-5 sm:px-9 sm:py-8 rounded-[7px] border border-[#DDD]">
+        <h3 className="ff_Merriweather text-black text-[22px] font-bold sm:text-2xl leading-[160%] pb-2 sm:pb-4">
           In this article
         </h3>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           1.
-          <span className="relative z-0 before:absolute before:bg-[#303030] before:h-[1px] before:w-full before:left-[1%] before:content-[''] before:bottom-[2px]">
-            {" "}
+          <span className="cursor-pointer inline-block underline underline-offset-4">
+           
             How to travel without spending a dime
           </span>
         </p>
-        <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%] py-4">
+        <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%] my-4">
           2.
-          <span className="relative z-0 before:absolute before:bg-[#303030] before:h-[1px] before:w-full before:left-[1%] before:content-[''] before:bottom-[2px] my-4">
-            {" "}
+          <span className="cursor-pointer inline-block underline underline-offset-4">
+           
             Get the most out of your credit card reward points
           </span>
         </p>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           3.
-          <span className="relative z-0 before:absolute before:bg-[#303030] before:h-[1px] before:w-full before:left-[1%] before:content-[''] before:bottom-[2px]">
-            {" "}
+          <span className="cursor-pointer inline-block underline underline-offset-4">
+           
             Why you don’t need more than 3 pieces of clothing
           </span>
         </p>
@@ -89,3 +89,4 @@ const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
 };
 
 export default FoodTheory;
+

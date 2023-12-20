@@ -16,7 +16,7 @@ const KeepReading: React.FC<KeepReadingProps> = ({ KeepReadingItems }) => {
           key={id}
           className="flex flex-wrap justify-center items-center pt-8 md:pt-[30px]"
         >
-          <div className="md:w-4/12 sm:w-10/12 w-full">
+          <div className="md:w-4/12 sm:w-10/12 w-full md:pr-4">
             <img
               height={177}
               width={266}
@@ -25,7 +25,7 @@ const KeepReading: React.FC<KeepReadingProps> = ({ KeepReadingItems }) => {
               alt="keep reading"
             />
           </div>
-          <div className="md:w-8/12 md:pl-[34px] pt-4">
+          <div className="md:w-8/12 md:pl-[18px] pt-4">
             <h3 className="ff_Merriweather text-[#303030] text-[22px] sm:text-2xl font-bold leading-[160%]">
               {item.Heading}
             </h3>

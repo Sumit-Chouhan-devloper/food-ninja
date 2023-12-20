@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import 'animate.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./views/Home";
 import Blog from "./views/Blog";

@@ -19,7 +19,7 @@ const About: React.FC<AboutProps> = ({ items }) => {
                   src={item.nature_img}
                   alt="nature"
                 />
-                <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-[3px] px-4 rounded mt-5 mb-3">
+                <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-[3px] px-4 rounded mt-5 mb-3 hover:bg-transparent border hover:border-[#283A61] hover:text-[#283A61] transition-all duration-300">
                   {item.btn}
                 </button>
                 <h3 className="ff_Merriweather text-black font-bold leading-[140%] text-[22px] sm:text-2xl">
