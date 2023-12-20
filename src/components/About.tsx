@@ -12,13 +12,15 @@ const About: React.FC<AboutProps> = ({ items }) => {
         {items.map((item, id) => (
           <div className="md:w-6/12 w-full flex flex-col justify-between h-full" key={id}>
             <div className="mb-4 md:mb-0">
-                <img
-                  height={510}
-                  width={278}
-                  className="w-full"
-                  src={item.nature_img}
-                  alt="nature"
-                />
+                <div className="overflow-hidden rounded">
+                  <img
+                    height={510}
+                    width={278}
+                    className="w-full hover:scale-110 transition-all duration-300"
+                    src={item.nature_img}
+                    alt="nature"
+                  />
+                </div>
                 <button className="ff_roboto text-[#DFE1E7] bg-[#283A61] font-medium text-sm py-[3px] px-4 rounded mt-5 mb-3 hover:bg-transparent border hover:border-[#283A61] hover:text-[#283A61] transition-all duration-300">
                   {item.btn}
                 </button>
