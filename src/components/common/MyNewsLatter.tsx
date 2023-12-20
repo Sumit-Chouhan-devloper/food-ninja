@@ -11,16 +11,18 @@ const MyNewsLatter = () => {
                 Get weekly food news, articles, and videos delivered to your
                 inbox.
               </p>
-              <div className="text-center">
-                <input
-                  className="ff_roboto w-full text-[#605C59] font-medium placeholder:text-[#605C59] text-base sm:text-lg px-3 py-2 rounded outline-none"
-                  placeholder="Email"
-                  type="text"
-                />
-              </div>
-              <button className="ff_roboto text-white bg-[#000638] text-base sm:text-lg font-medium leading-[160%] mt-5 rounded px-3 py-2 hover:bg-[white] hover:text-[#283A61] transition-all duration-300">
-                Sign Up
-              </button>
+              <form>
+                <div className="text-center">
+                  <input required
+                    className="ff_roboto w-full text-[#605C59] font-medium placeholder:text-[#605C59] text-base sm:text-lg px-3 py-2 rounded outline-none"
+                    placeholder="Email"
+                    type="text"
+                  />
+                </div>
+                <button className="ff_roboto text-white bg-[#000638] text-base sm:text-lg font-medium leading-[160%] mt-5 rounded px-3 py-2 hover:bg-[white] hover:text-[#283A61] transition-all duration-300">
+                  Sign Up
+                </button>
+              </form>
             </div>
           </div>
           <div className="lg:w-4/12 w-full md:w-6/12 pt-6 lg:pt-0 pr-4 lg:pr-0 lg:pl-[40px]">
