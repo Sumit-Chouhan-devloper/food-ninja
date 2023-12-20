@@ -23,7 +23,7 @@ const Footer = () => {
               Contact
             </a>
           </div>
-          <p className="ff_Merriweather text-[#3E3E3E] text-center font-bold pt-[26px]">
+          <p className="ff_Merriweather text-[#3E3E3E] text-sm text-center font-bold pt-[26px] leading-[160%]">
             Copyright © {new Date().getFullYear()} Food Ninja Blog. All Rights
             Reserved.
           </p>

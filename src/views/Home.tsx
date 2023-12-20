@@ -5,7 +5,6 @@ import { items } from "../components/common/Helper";
 import Footer from "../components/common/Footer";
 import MyNewsLatter from "../components/common/MyNewsLatter";
 import BackToTop from "../components/common/BackToTop";
-import Loader from "../components/common/Loader";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
   return (
     <>
       <BackToTop />
-      <Loader />
       <Nav />
       <MyHero />
       <About items={items} />

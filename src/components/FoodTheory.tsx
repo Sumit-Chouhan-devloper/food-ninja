@@ -1,7 +1,6 @@
 import blog_Nature_img from "../assets/images/png/blog-top-img.png";
 import user_img from "../assets/images/png/userImg.png";
 import { FoodTheoryItem } from "./common/Helper";
-// Define a type for the AboutCard item
 type FoodTheoryProps = {
   TheoryItems: FoodTheoryItem[];
 };
@@ -51,24 +50,24 @@ const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
         </h3>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           1.
-          <span className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
            
             How to travel without spending a dime
-          </span>
+          </a>
         </p>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%] my-4">
           2.
-          <span className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
            
             Get the most out of your credit card reward points
-          </span>
+          </a>
         </p>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           3.
-          <span className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
            
             Why you don’t need more than 3 pieces of clothing
-          </span>
+          </a>
         </p>
       </div>
       <p className="ff_roboto text-lg sm:text-xl text-[#434343] leading-[160%] pt-8 md:pt-10">

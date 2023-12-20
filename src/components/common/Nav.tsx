@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
-const HeaderLast = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     if (isOpen) {
@@ -36,13 +36,13 @@ const HeaderLast = () => {
                 </Link>
                 <Link
                   className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-                  to="/Blog"
+                  to="/About"
                 >
                   About
                 </Link>
                 <Link
                   className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-                  to="/Blog"
+                  to="/Contact"
                 >
                   Contact
                 </Link>
@@ -108,4 +108,4 @@ const HeaderLast = () => {
   );
 };
 
-export default HeaderLast;
+export default Nav;
