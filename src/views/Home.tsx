@@ -6,8 +6,12 @@ import Footer from "../components/common/Footer";
 import MyNewsLatter from "../components/common/MyNewsLatter";
 import BackToTop from "../components/common/BackToTop";
 import Loader from "../components/common/Loader";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <BackToTop />
