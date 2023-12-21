@@ -1,8 +1,8 @@
-import nature_card from "../../assets/images/png/NatureCardImg.png";
-import food_img from "../../assets/images/png/FoodCardImg.png";
+import nature_card from "../../assets/images/webp/NatureCardImg.webp";
+import food_img from "../../assets/images/webp/FoodCardImg.webp";
 import user_img from "../../assets/images/png/userImg.png";
-import keep_reading1 from "../../assets/images/png/keep_reading_1.png";
-import keep_reading2 from "../../assets/images/png/keep_reading_2.png";
+import keep_reading1 from "../../assets/images/webp/keep_reading_1.webp";
+import keep_reading2 from "../../assets/images/webp/keep_reading_2.webp";
 
 // about card data
 export type AboutCardItem = {

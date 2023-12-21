@@ -1,4 +1,4 @@
-import blog_Nature_img from "../assets/images/png/blog-top-img.png";
+import blog_Nature_img from "../assets/images/webp/blog-top-img.webp";
 import user_img from "../assets/images/png/userImg.png";
 import { FoodTheoryItem } from "./common/Helper";
 type FoodTheoryProps = {
