@@ -50,21 +50,21 @@ const FoodTheory: React.FC<FoodTheoryProps> = ({ TheoryItems }) => {
         </h3>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           1.
-          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline hover:no-underline underline-offset-4">
            
             How to travel without spending a dime
           </a>
         </p>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%] my-4">
           2.
-          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline underline-offset-4 hover:no-underline">
            
             Get the most out of your credit card reward points
           </a>
         </p>
         <p className="ff_Merriweather text-#303030 text-base sm:text-lg leading-[160%]">
           3.
-          <a href="#" className="cursor-pointer inline-block underline underline-offset-4">
+          <a href="#" className="cursor-pointer inline-block underline underline-offset-4 hover:no-underline">
            
             Why you don’t need more than 3 pieces of clothing
           </a>

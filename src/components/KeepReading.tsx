@@ -28,10 +28,10 @@ const KeepReading: React.FC<KeepReadingProps> = ({ KeepReadingItems }) => {
             </div>
           </div>
           <div className="md:w-8/12 md:pl-[18px] pt-4">
-            <h3 className="ff_Merriweather text-[#303030] text-[22px] sm:text-2xl font-bold leading-[160%]">
+            <h3 className="ff_Merriweather text-[#303030] group-hover:underline-offset-4 group-hover:underline text-[22px] sm:text-2xl font-bold leading-[160%] transition-all duration-300">
               {item.Heading}
             </h3>
-            <p className="ff_roboto text-[#4F4F4F] text-base sm:text-lg leading-[160%] md:pt-2">
+            <p className="ff_roboto text-[#4F4F4F] text-base sm:text-lg leading-[160%] md:pt-2 group-hover:underline-offset-4 group-hover:underline transition-all duration-300">
               {item.para}
             </p>
           </div>
