@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link, useLocation } from "react-router-dom";
-
-const Nav = () => {
+// import { navLinks } from "./Helper";
+import linksModel from "../../model/links";
+interface NavProps {
+  navLinks: linksModel[];
+}
+const Nav: React.FC<NavProps> = ({ navLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = useLocation().pathname;
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -14,9 +19,6 @@ const Nav = () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, [isOpen]);
-
-  const path = useLocation().pathname;
-
   return (
     <>
       <nav>
@@ -30,26 +32,17 @@ const Nav = () => {
             </Link>
             <div className="hidden sm:block">
               <div className="gap-5 flex items-center">
-                <Link
-                  className={`ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-[''] ${
-                    path === "/Blog" ? "font-bold !text-[#283A61]" : ""
-                  }`}
-                  to="/Blog"
-                >
-                  Blog
-                </Link>
-                <a
-                  href="#privacy"
-                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-                >
-                  About
-                </a>
-                <a
-                  href="#footer"
-                  className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-                >
-                  Contact
-                </a>
+                {navLinks.map((link, index) =>   (
+                  <Link
+                    key={index}
+                    className={`ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-[''] ${
+                      path === link.to ? "font-bold !text-[#283A61]" : ""
+                    }`}
+                    to={link.to}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
                 <button className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4 hover:bg-transparent hover:text-[#283A61] border hover:border-[#283A61] transition-all duration-300">
                   Log in
                 </button>
@@ -78,28 +71,18 @@ const Nav = () => {
           id="mobile-menu"
         >
           <div className="gap-5 flex items-center flex-col justify-center h-full">
-            <Link
-              onClick={() => setIsOpen(!isOpen)}
-              className={`ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-[''] ${
-                path === "/Blog" ? "font-bold !text-[#283A61]" : ""
-              }`}
-              to="/Blog"
-            >
-              Blog
-            </Link>
-            <a  href="#privacy"
-              onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-            >
-              About
-            </a>
-            <a href="#footer"
-              onClick={() => setIsOpen(!isOpen)}
-              className="ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-['']"
-              
-            >
-              Contact
-            </a>
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                onClick={() => setIsOpen(!isOpen)}
+                className={`ff_roboto text-[#605C59] text-lg hover:text-[#283A61] transition-all duration-200 relative before:absolute before:h-[2px] hover:before:left-0 before:transition-all before:duration-300 hover:before:w-full before:w-0 before:bottom-0 before:bg-[#283A61] before:left-[50%] before:content-[''] ${
+                  path === link.to ? "font-bold !text-[#283A61]" : ""
+                }`}
+                to={link.to}
+              >
+                {link.label}
+              </Link>
+            ))}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="ff_roboto text-white bg-[#283A61] text-lg rounded-[29px] py-1 px-4 hover:bg-transparent hover:text-[#283A61] border hover:border-[#283A61] transition-all duration-300"

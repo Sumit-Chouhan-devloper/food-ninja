@@ -3,7 +3,18 @@ import food_img from "../../assets/images/webp/FoodCardImg.webp";
 import user_img from "../../assets/images/png/userImg.png";
 import keep_reading1 from "../../assets/images/webp/keep_reading_1.webp";
 import keep_reading2 from "../../assets/images/webp/keep_reading_2.webp";
-
+// nav links
+export const navLinks= [
+  { to: "/Blog", label: "Blog" },
+  { to: "#privacy", label: "About" },
+  { to: "#footer", label: "Contact" },
+];
+// footer links
+export const footerLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Privacy Policy', href: '#privacy' },
+  { label: 'Contact', href: '#contact' },
+];
 // about card data
 export type AboutCardItem = {
   nature_img: string;
@@ -82,8 +93,10 @@ export const TheoryItems: FoodTheoryItem[] = [
   },
   {
     foodTheoryHeading: "Why you don’t need more than 3 pieces of clothing",
-    foodTheoryPara1: "Massa aenean cursus nulla urna dui, fermentum cursus in facilisis. Vulputate euismod vestibulum dolor in elementum quis quis. Erat proin in eget arcu tellus ut ultrices. Quis maecenas ullamcorper ante sit leo placerat. Quisque dictum laoreet eget quam leo tortor scelerisque sit nullam. Lacus, tortor, aenean mattis lobortis lacinia mauris. Viverra nulla.",
-    foodTheoryPara2: "Sed pellentesque quam lorem urna. Mauris donec molestie eget massa pellentesque facilisis netus mauris. Magna eget eget sollicitudin at faucibus odio. At augue sit nisi et metus cras dignissim vel, tortor. Maecenas molestie consequat cursus posuere ultrices facilisis hac bibendum semper. Sed lorem vel donec proin. Volutpat aliquet rhoncus sit et.",
+    foodTheoryPara1:
+      "Massa aenean cursus nulla urna dui, fermentum cursus in facilisis. Vulputate euismod vestibulum dolor in elementum quis quis. Erat proin in eget arcu tellus ut ultrices. Quis maecenas ullamcorper ante sit leo placerat. Quisque dictum laoreet eget quam leo tortor scelerisque sit nullam. Lacus, tortor, aenean mattis lobortis lacinia mauris. Viverra nulla.",
+    foodTheoryPara2:
+      "Sed pellentesque quam lorem urna. Mauris donec molestie eget massa pellentesque facilisis netus mauris. Magna eget eget sollicitudin at faucibus odio. At augue sit nisi et metus cras dignissim vel, tortor. Maecenas molestie consequat cursus posuere ultrices facilisis hac bibendum semper. Sed lorem vel donec proin. Volutpat aliquet rhoncus sit et.",
   },
 ];
 
@@ -98,12 +111,12 @@ export type keepReadingItem = {
 export const KeepReadingItems: keepReadingItem[] = [
   {
     Image: keep_reading1,
-    Heading:"Why you don’t need more than 3 pieces of clothing",
-    para:"Et vitae, mollis euismod lobortis blandit amet sed amet. Amet ut amet nisl tortor arcu non id nulla mauris neque nisl magna.",
+    Heading: "Why you don’t need more than 3 pieces of clothing",
+    para: "Et vitae, mollis euismod lobortis blandit amet sed amet. Amet ut amet nisl tortor arcu non id nulla mauris neque nisl magna.",
   },
   {
     Image: keep_reading2,
-    Heading:"Why you should cook with your family together everyday",
-    para:"Rutrum aliquet eros semper nunc. In adipiscing augue sagittis, fermentum donec nunc lacinia. Risus in egestas in orci quam.",
+    Heading: "Why you should cook with your family together everyday",
+    para: "Rutrum aliquet eros semper nunc. In adipiscing augue sagittis, fermentum donec nunc lacinia. Risus in egestas in orci quam.",
   },
 ];

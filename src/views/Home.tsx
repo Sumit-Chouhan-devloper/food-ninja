@@ -1,7 +1,7 @@
 import MyHero from "../components/MyHero";
 import Nav from "../components/common/Nav";
 import About from "../components/About";
-import { items } from "../components/common/Helper";
+import { items, navLinks } from "../components/common/Helper";
 import Footer from "../components/common/Footer";
 import MyNewsLatter from "../components/common/MyNewsLatter";
 import BackToTop from "../components/common/BackToTop";
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <BackToTop />
-      <Nav />
+      <Nav navLinks={navLinks}/>
       <MyHero />
       <About items={items} />
       <MyNewsLatter />
