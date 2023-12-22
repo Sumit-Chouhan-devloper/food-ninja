@@ -1,6 +1,7 @@
-export default interface author{
-    id:string,
-    title:string,
-    image:string,
-    description:string,
-}
+export default interface Author {
+    id: string;
+    title: string;
+    image: string;
+    description: string;
+  }
+  

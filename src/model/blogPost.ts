@@ -1,18 +1,14 @@
-import linksModel from "./links";
-import author from "./author";
-export default interface blogPost{
-    id:string,
-    title:string,
-    image:string,
-    description:postDescription,
-    body:string,
-    content:linksModel[],
-    createdAt:string,
-    updatedAt:string,
-    author:author,
-}
+import Author from "./author";
 
- interface postDescription{
-    subHeading:string,
-    description:string,
+export default interface BlogPost {
+  id: string;
+  author: Author;
+  body: string;
+  content: { label: string; to: string }[];
+  createdAt: string; // You might want to use Date type here
+  updatedAt: string; // You might want to use Date type here
+  category: string;
+  description: { description: string; subHeading: string }[];
+  title: string;
+  image: string;
 }
