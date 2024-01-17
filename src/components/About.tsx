@@ -5,15 +5,16 @@ import { posts } from "../model/data";
 const About = () => {
   const { id } = useParams();
   return (
-    <div className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-12 sm:mt-[40px]" id="about">
-      <div className="flex flex-wrap mb-12 items-center lg:gap-20 gap-10"id={id}>
+    <div
+      className="container xl:max-w-[1100px] 3xl:max-w-[1140px] mx-auto px-3 xl:px-0 mt-12 sm:mt-[40px]"
+      id="about"
+    >
+      <div
+        className="flex flex-wrap mb-12 items-center lg:gap-20 gap-10"
+        id={id}
+      >
         {posts.map((item, key) => (
-          <Link
-          to="/blog/"
-            className="lg:w-[46%] w-full group"
-           
-            key={key}
-          >
+          <Link to="/blog/" className="lg:w-[46%] w-full group" key={key}>
             <div className="mb-4 md:mb-0">
               <div className="overflow-hidden rounded">
                 <img
